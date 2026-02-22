@@ -106,7 +106,7 @@ export default function Home() {
             <div className="hidden md:flex">
               <button
                 onClick={() => scrollToSection("participa")}
-                className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors"
+                className="bg-[#e55d5f] hover:bg-[#d64a4c] text-white px-4 py-2 rounded-lg font-semibold transition-colors"
               >
                 Participa!
               </button>
@@ -137,7 +137,7 @@ export default function Home() {
               ))}
               <button
                 onClick={() => scrollToSection("participa")}
-                className="w-full mt-2 bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors"
+                className="w-full mt-2 bg-[#e55d5f] hover:bg-[#d64a4c] text-white px-4 py-2 rounded-lg font-semibold transition-colors"
               >
                 Participa!
               </button>
@@ -172,7 +172,7 @@ export default function Home() {
               href="https://forms.gle/NungYdppMM6jM2YK6"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-lg font-bold text-lg transition-colors"
+              className="bg-[#e55d5f] hover:bg-[#d64a4c] text-white px-8 py-3 rounded-lg font-bold text-lg transition-colors"
             >
               Participa a l'enquesta (adolescents)
             </a>
@@ -284,7 +284,7 @@ export default function Home() {
                   "Les xarxes socials augmenten la motivació però generen expectatives irrealistes",
                   "El boom de clíniques ha democratitzat l'accés però manté una bretxa d'exclusió social",
                 ].map((hip, i) => (
-                  <div key={i} className="bg-gray-50 p-4 rounded-lg border-l-4 border-red-500">
+                  <div key={i} className="bg-gray-50 p-4 rounded-lg border-l-4 border-[#e55d5f]">
                     <p className="text-gray-700">{hip}</p>
                   </div>
                 ))}
@@ -306,9 +306,9 @@ export default function Home() {
 
           <div className="mb-12">
             <img
-              src="https://private-us-east-1.manuscdn.com/sessionFile/PWA39nw8AgE3RA2PF8Ccp0/sandbox/XsRiLYwUF3emXKmpFDmaaS-img-4_1771758606000_na1fn_YmlvcHN5Y2hvc29jaWFsLW1vZGVs.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvUFdBMzludzhBZ0UzUkEyUEY4Q2NwMC9zYW5kYm94L1hzUmlMWXdVRjNlbVhLbXBGRG1hYVMtaW1nLTRfMTc3MTc1ODYwNjAwMF9uYTFmbl9ZbWx2Y0hONVkyaHZjMjlqYVdGc0xXMXZaR1ZzLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=MoQWLdH4LiRHIR-zIDFXzkM994GBMP~cUNKB6SkWcI1yEA6TuNckMN9kqhUc5AmOdhVu6t0sSNnwDblENFpkahF3QSv8WdLFiHW3wPT2bfcW-AjeAHEsaTpbttMXTxH1ACxxMMdo7aUH3XlxCUmBnimd1qLXDXEfJumBevoECFxwTEXsX2A2gvSRKF3FPrTHZBt20YlmGTx8MufDY2S3UJbvy0WvbZl8JE9u2D-ZXQ2G~R0PMDB8mXvFKrGAW0cQZ4dSW5sJ1FrTKP-6-y1iUSPrpyaQoEyn7M8MBK8VVtcitiNV36ec9fW8w6iHJ7enHMcikwVy8XPxUCf8bcv3kg__"
-              alt="Model Biopsicosocial-Cultural"
-              className="w-full max-w-2xl mx-auto mb-8"
+              src="/model-biopsicosocial.png"
+              alt="Model biopsicosocial de l'ortodòncia"
+              className="w-full max-w-3xl mx-auto mb-8"
             />
           </div>
 
@@ -340,8 +340,8 @@ export default function Home() {
 
           <div className="mb-12">
             <img
-              src="https://private-us-east-1.manuscdn.com/sessionFile/PWA39nw8AgE3RA2PF8Ccp0/sandbox/XsRiLYwUF3emXKmpFDmaaS-img-3_1771758604000_na1fn_cmVzZWFyY2gtbWV0aG9kb2xvZ3k.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvUFdBMzludzhBZ0UzUkEyUEY4Q2NwMC9zYW5kYm94L1hzUmlMWXdVRjNlbVhLbXBGRG1hYVMtaW1nLTNfMTc3MTc1ODYwNDAwMF9uYTFmbl9jbVZ6WldGeVkyZ3RiV1YwYUc5a2IyeHZaM2sucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=UDxM~OYu8yHLT5Czpoemwivct2YT-flRvsxmQQT4VuE1FjwLRj8yewYn0n~qlWdfCgizwD7Z0oqHYxyN4MpZfCzzFBUgCSybQIiDnXkdByMA~DcMoxPSA8K4era0NUd2EIwd7Tzg2fC19Jf2N7CC15RKC6lFhFXPMCWeiQyWaDsBFvjBDZI4vUIKTZT-BtoYGEA36BLjZr3Lgnrb5MLvtIMVdT0~ENWa-ETMKQIWl2RHy6BNRWbsCZEg~iv6xsOAVMsA9nxwMs3VoxGXuCcbyV~A6H388rFIBlJIt727-pTAGRKyi6OyXM5bP7uYhpbgKYGuMNVh51RdQEP51lFl1A__"
-              alt="Metodologia de Recerca"
+              src="/metodologia-mixta.png"
+              alt="Disseny mixt de la recerca (qualitatiu i quantitatiu)"
               className="w-full max-w-4xl mx-auto mb-8"
             />
           </div>
@@ -384,7 +384,7 @@ export default function Home() {
       </section>
 
       {/* PARTICIPA SECTION */}
-      <section id="participa" className="py-16 md:py-24 bg-gradient-to-r from-red-500 to-red-600 text-white">
+      <section id="participa" className="py-16 md:py-24 bg-gradient-to-r from-[#e55d5f] to-[#d64a4c] text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center">
             La teva veu importa
@@ -403,7 +403,7 @@ export default function Home() {
               <div className="text-teal-500 mb-4"><DocumentIcon /></div>
               <h3 className="text-2xl font-bold mb-4">Enquesta per a adolescents</h3>
               <p className="text-gray-700 mb-6">28-30 preguntes · 5-6 minuts · Anònima</p>
-              <div className="w-full bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-bold transition-colors">
+              <div className="w-full bg-[#e55d5f] hover:bg-[#d64a4c] text-white px-6 py-3 rounded-lg font-bold transition-colors">
                 RESPON L'ENQUESTA
               </div>
             </a>
