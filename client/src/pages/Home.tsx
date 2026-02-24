@@ -154,7 +154,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('/adolescents-brackets.jpg')`,
+            backgroundImage: `url('${import.meta.env.BASE_URL}adolescents-brackets.jpg')`,
           }}
         >
           <div className="absolute inset-0 bg-black/50"></div>
@@ -205,36 +205,39 @@ export default function Home() {
 
           <div className="mb-12 bg-white p-8 rounded-lg shadow-md border-l-4 border-teal-500">
             <p className="text-lg text-gray-700 mb-4">
-              Als instituts de Tortosa, els brackets s'han convertit en tendència. Però amaga una realitat complexa: les Terres de l'Ebre tenen una renda familiar un <strong>22% inferior a la mitjana catalana</strong>, i un tractament d'ortodòncia pot costar entre <strong>2.500€ i 4.000€</strong>.
+              Segur que si mires al teu voltant molts adolescents duen brackets o Invisalign. Jo n'he dut, els meus germans també, i quasi tots els meus amics.
+            </p>
+            <p className="text-lg text-gray-700 mb-4">
+              Però, realment ens posem ortodòncia només per "salut" o hi ha alguna cosa més?
             </p>
             <p className="text-lg text-gray-700">
-              <strong>8 dels 10 municipis amb la renda més baixa de Catalunya es troben a la nostra comarca.</strong> Les xarxes socials com Instagram i TikTok mostren constantment somriures perfectes. Creen pressió real sobre l'autoestima dels adolescents?
+              Aquest treball neix de la curiositat per entendre com l'ortodòncia ha passat de ser un tractament mèdic a una exigència estètica que afecta la nostra autoestima.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col items-center text-center">
-              <div className="text-teal-500 mb-4"><MoneyIcon /></div>
-              <h3 className="text-lg font-bold text-blue-900 mb-2">Renda local</h3>
-              <p className="text-gray-700">22% per sota de la mitjana catalana</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col items-center text-center">
-              <div className="text-teal-500 mb-4"><ToothIcon /></div>
-              <h3 className="text-lg font-bold text-blue-900 mb-2">Cost ortodòncia</h3>
-              <p className="text-gray-700">2.500€ - 4.000€ per tractament</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col items-center text-center">
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col items-center text-center border-t-4 border-teal-500">
               <div className="text-teal-500 mb-4"><SocialMediaIcon /></div>
-              <h3 className="text-lg font-bold text-blue-900 mb-2">Influència digital</h3>
-              <p className="text-gray-700">1 de cada 3 adolescents admet que les xarxes han influït</p>
+              <h3 className="text-lg font-bold text-blue-900 mb-2">L'efecte "Instagram Smile"</h3>
+              <p className="text-gray-700 text-sm">Estem tot el dia a TikTok i Instagram veient somriures perfectes i blancs (molts cops amb filtres!). Això crea una pressió social per "encaixar".</p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col items-center text-center">
-              <div className="text-teal-500 mb-4"><BuildingIcon /></div>
-              <h3 className="text-lg font-bold text-blue-900 mb-2">Boom dental</h3>
-              <p className="text-gray-700">+200% de clíniques des del 2010</p>
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col items-center text-center border-t-4 border-teal-500">
+              <div className="text-teal-500 mb-4"><EuroIcon /></div>
+              <h3 className="text-lg font-bold text-blue-900 mb-2">Cost econòmic</h3>
+              <p className="text-gray-700 text-sm">Una ortodòncia costa de 3.000 a 4.000 €. A les Terres de l'Ebre, la renda familiar és un 22% inferior a la mitjana catalana. Com afecta això a la decisió de portar brackets? Existeix una bretxa econòmica?</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col items-center text-center border-t-4 border-teal-500">
+              <div className="text-teal-500 mb-4"><UserIcon /></div>
+              <h3 className="text-lg font-bold text-blue-900 mb-2">L’efecte Lamine Yamal</h3>
+              <p className="text-gray-700 text-sm">Portar brackets de colors ara és un símbol de prestigi i identitat. Ha deixat de fer vergonya per convertir-se en moda.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col items-center text-center border-t-4 border-teal-500">
+              <div className="text-teal-500 mb-4"><BrainIcon /></div>
+              <h3 className="text-lg font-bold text-blue-900 mb-2">Redefinir què és estar "sa"</h3>
+              <p className="text-gray-700 text-sm">La salut no és només no estar malalt. També és sentir-se bé, veure's atractiu i tindre una bona autoestima. Com encaixa l'ortodòncia en aquest concepte de salut?</p>
             </div>
           </div>
         </div>
@@ -306,7 +309,7 @@ export default function Home() {
 
           <div className="mb-12">
             <img
-              src="/model-biopsicosocial.png"
+              src={`${import.meta.env.BASE_URL}model-biopsicosocial.png`}
               alt="Model biopsicosocial de l'ortodòncia"
               className="w-full max-w-3xl mx-auto mb-8"
             />
@@ -340,7 +343,7 @@ export default function Home() {
 
           <div className="mb-12">
             <img
-              src="/metodologia-mixta.png"
+              src={`${import.meta.env.BASE_URL}metodologia-mixta.png`}
               alt="Disseny mixt de la recerca (qualitatiu i quantitatiu)"
               className="w-full max-w-4xl mx-auto mb-8"
             />
@@ -348,7 +351,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-blue-900">
-              <h3 className="text-2xl font-bold text-blue-900 mb-6">Fase 1: Enquestes Quantitatives</h3>
+              <h3 className="text-2xl font-bold text-blue-900 mb-6">Fase 1: Enquestes QUANTITATIVES</h3>
               <p className="text-gray-700 mb-4"><strong>Període:</strong> Abril - Juliol 2026</p>
               <ul className="space-y-3 text-gray-700">
                 <li>✓ 350-400 adolescents de 12 a 18 anys</li>
@@ -362,7 +365,7 @@ export default function Home() {
             </div>
 
             <div className="bg-teal-50 p-8 rounded-lg border-l-4 border-teal-500">
-              <h3 className="text-2xl font-bold text-teal-700 mb-6">Fase 2: Entrevistes Qualitatives</h3>
+              <h3 className="text-2xl font-bold text-teal-700 mb-6">Fase 2: Entrevistes QUALITATIVES</h3>
               <p className="text-gray-700 mb-4"><strong>Període:</strong> Maig - Juliol 2026</p>
               <ul className="space-y-3 text-gray-700">
                 <li>✓ 8-12 adolescents (selecció estratificada)</li>
@@ -374,11 +377,45 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-8 bg-gray-50 p-6 rounded-lg">
-            <h4 className="text-lg font-bold text-blue-900 mb-3">Integració de Dades</h4>
-            <p className="text-gray-700">
-              Els "joint displays" combinen estadístiques quantitatives amb cites textuals de les entrevistes qualitatives, permetent una comprensió més profunda dels fenòmens estudiats.
+
+        </div>
+      </section>
+
+      {/* BIBLIOGRAFIA SECTION */}
+      <section id="referencies" className="py-16 md:py-24 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Rigor científic</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Aquesta recerca es fonamenta en estudis internacionals i enquestes validades per la comunitat científica; algunes de les referències més rellevants són:
             </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white p-6 rounded-lg border-l-4 border-blue-900 shadow-sm">
+              <p className="text-sm font-semibold text-blue-900 mb-2">MOTIVACIÓ FAMILIAR</p>
+              <p className="text-gray-700 italic text-sm">
+                Wędrychowska-Szulc, B., & Syryńska, M. (2010). Patient and parent motivation for orthodontic treatment: A questionnaire study. <strong>European Journal of Orthodontics.</strong>
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg border-l-4 border-blue-900 shadow-sm">
+              <p className="text-sm font-semibold text-blue-900 mb-2">INSTAGRAM SMILE & FILTRES</p>
+              <p className="text-gray-700 italic text-sm">
+                Karkun, M., Singh, P., & Sharma, A. (2023). Instagram smile: The impact of social media filters on dental aesthetic expectations. <strong>European Journal of Orthodontics.</strong>
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg border-l-4 border-blue-900 shadow-sm">
+              <p className="text-sm font-semibold text-blue-900 mb-2">VALIDACIÓ CIENTÍFICA (PIDAQ)</p>
+              <p className="text-gray-700 italic text-sm">
+                Montiel-Company, J. M., et al. (2013). Validation of the Psychosocial Impact of Dental Aesthetics Questionnaire (PIDAQ) in Spanish adolescents. <strong>Medicina Oral.</strong>
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg border-l-4 border-blue-900 shadow-sm">
+              <p className="text-sm font-semibold text-blue-900 mb-2">DESIGUALTAT ECONÒMICA</p>
+              <p className="text-gray-700 italic text-sm">
+                Schmahl, C., Bekes, K., & Frankenberger, R. (2024). Socioeconomic factors and orthodontic treatment uptake in German adolescents. <strong>Community Dentistry & Oral Epidemiology.</strong>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -436,7 +473,7 @@ export default function Home() {
             <h3 className="text-2xl font-bold mb-4">Vols explicar la teva experiència amb més detall?</h3>
             <p className="mb-6">Estic buscant adolescents i pares disposats a participar en una entrevista de 30-40 minuts (presencial o online).</p>
             <a
-              href="mailto:laia.genaro@example.com"
+              href="mailto:laia.genaro@csagrada.com"
               className="inline-block bg-white text-red-500 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors"
             >
               Contacta'm per l'entrevista
@@ -479,16 +516,24 @@ export default function Home() {
           </h2>
 
           <div className="bg-white p-8 rounded-lg shadow-md">
-            <h3 className="text-2xl font-bold text-blue-900 mb-4">Laia Genaró Solé</h3>
-            <p className="text-gray-700 mb-4 text-lg">
-              Alumna de 2n de Batxillerat al Col·legi Diocesà de la Sagrada Família, Tortosa.
-            </p>
-            <p className="text-gray-700 mb-4 text-lg">
-              Vaig decidir investigar aquest tema perquè és el que veig cada dia al meu voltant. Quasi tots els meus amics porten o han portat brackets. Em va intrigar per què, i com afecta a l'autoestima i a l'economia familiar.
-            </p>
-            <p className="text-gray-700 text-lg">
-              <strong>Curs 2025-2026</strong> | Col·legi Diocesà de la Sagrada Família, Tortosa
-            </p>
+            <h3 className="text-2xl font-bold text-blue-900 mb-6">Laia Genaró Solé</h3>
+            <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
+              <p>
+                Soc alumna de Batxillerat social al Col·legi de la Sagrada Família de Tortosa. El meu Treball de Recerca naix d’una pregunta molt senzilla que veig cada dia al meu voltant: <strong>per què quasi tots els meus amics portem ortodòncia?</strong>
+              </p>
+              <p>
+                Com a estudiant de la modalitat social, m’interessa entendre què hi ha realment darrere d’aquesta tendència. Vull analitzar com l’ortodòncia ha deixat de ser només un tractament mèdic per convertir-se també en un element que influeix en la nostra identitat adolescent, en la manera com ens veiem i en com volem que ens vegin.
+              </p>
+              <p>
+                Per tindre una visió completa de la realitat, aplico el <strong>model biopsicosocial-cultural</strong>, que entén la salut no només com l’absència de malaltia, sinó com el resultat de factors biològics, psicològics i socials. A més, utilitzo un <strong>disseny d’investigació mixt</strong>, combinant dades estadístiques obtingudes a través d’enquestes amb testimonis reals d’adolescents i professionals del territori.
+              </p>
+              <p>
+                Això em permet integrar diferents punts de vista i arribar a conclusions més sòlides, amb la voluntat que els <strong>resultats puguen ser útils tant per a les famílies com per als professionals de les Terres de l’Ebre.</strong>
+              </p>
+            </div>
+            <div className="mt-8 pt-6 border-t border-gray-100 text-sm text-gray-500">
+              <p><strong>Curs 2025-2026</strong> | Col·legi Diocesà de la Sagrada Família, Tortosa</p>
+            </div>
           </div>
         </div>
       </section>
@@ -503,11 +548,11 @@ export default function Home() {
             Si tens preguntes sobre la recerca o vols participar, no dubtis a contactar-me.
           </p>
           <div className="space-y-4">
-            <p className="text-gray-700 flex items-center gap-2">
+            <p className="text-gray-700 flex items-center justify-center gap-2">
               <span className="text-teal-500 w-5 h-5"><EmailIcon /></span>
               <strong>Email:</strong>{" "}
-              <a href="mailto:laia.genaro@example.com" className="text-teal-500 hover:text-teal-600">
-                laia.genaro@example.com
+              <a href="mailto:laia.genaro@csagrada.com" className="text-teal-500 hover:text-teal-600">
+                laia.genaro@csagrada.com
               </a>
             </p>
             <p className="text-gray-700">
